@@ -7,7 +7,7 @@ const Footer = (props) => (
       <li><a href="https://www.linkedin.com/in/charleswollin/" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
       <li><a href="http://www.instagram.com/djchuckywo" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
     </ul>
-        <p className="copyright">&copy;2018 Charles Wollin</p>
+        <p className="copyright">&copy;2018 Charles Wollin.</p>
 
     </footer>
 )

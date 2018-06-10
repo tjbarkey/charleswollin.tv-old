@@ -12,10 +12,10 @@
 */
 
 	@include skel-breakpoints((
-		xlarge:		'(max-width: 1680px)',
+		xlarge:		'(min-width: 1281px)',
 		large:		'(max-width: 1280px)',
 		medium:		'(max-width: 980px)',
-		small:		'(max-width: 736px)',
+		small:		'(max-width: 550px)',
 		xsmall:		'(max-width: 480px)',
 		xxsmall:	'(max-width: 360px)'
 	));
@@ -44,6 +44,8 @@
 
 	@import 'layout/bg';
 	@import 'layout/wrapper';
+	@import 'layout/newwrapper';
 	@import 'layout/header';
 	@import 'layout/main';
 	@import 'layout/footer';
+	@import 'layout/bloglisting';

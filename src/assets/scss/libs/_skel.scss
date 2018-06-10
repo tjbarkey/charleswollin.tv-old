@@ -70,11 +70,7 @@
 
 // Functions.
 
-	/// Removes a specific item from a list.
-	/// @author Hugo Giraudel
-	/// @param {list} $list List.
-	/// @param {integer} $index Index.
-	/// @return {list} Updated list.
+
 	@function remove-nth($list, $index) {
 
 		$result: null;
@@ -108,11 +104,7 @@
 	}
 
 	/// Replaces a substring within another string.
-	/// @author Hugo Giraudel
-	/// @param {string} $string String.
-	/// @param {string} $search Substring.
-	/// @param {string} $replace Replacement.
-	/// @return {string} Updated string.
+
 	@function str-replace($string, $search, $replace: '') {
 
 		$index: str-index($string, $search);
@@ -141,10 +133,7 @@
 	}
 
 	/// Gets a value from a map.
-	/// @author Hugo Giraudel
-	/// @param {map} $map Map.
-	/// @param {string} $keys Key(s).
-	/// @return {string} Value.
+
 	@function val($map, $keys...) {
 
 		@if nth($keys, 1) == null {
