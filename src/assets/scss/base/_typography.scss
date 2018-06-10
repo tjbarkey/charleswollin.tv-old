@@ -73,10 +73,10 @@
 
 		&.major {
 			border-bottom: solid _size(border-width) _palette(border);
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
+			width: -moz-fit-content;
+			width: -webkit-fit-content;
+			width: -ms-fit-content;
+			width: fit-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 (_size(element-margin) * 1) 0;
 		}
@@ -89,9 +89,9 @@
 	}
 
 	h2 {
-		font-size: 1.5rem;
-		line-height: 1.4;
-		letter-spacing: _font(letter-spacing-heading);
+		font-size: 1.25em;
+		line-height: 1.5;
+		
 	}
 
 	h3 {

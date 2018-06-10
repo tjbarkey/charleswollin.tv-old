@@ -14,7 +14,7 @@ class NewPage extends React.Component {
             <meta name="description" content={siteDescription} />
         </Helmet>
 
-        <h1>This is a new page</h1>
+        
 
       </div>
     )

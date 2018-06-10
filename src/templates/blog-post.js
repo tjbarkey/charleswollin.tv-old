@@ -9,9 +9,9 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div>
+      <div id="newwrapper" className="wrapped">
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <h1 className="major">{post.frontmatter.title}</h1>
         <p>
           {post.frontmatter.date}
         </p>
