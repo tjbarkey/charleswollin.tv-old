@@ -17,6 +17,7 @@
     "gatsby-transformer-remark": "^1.7.37",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.4"
+    "react-hexgrid": "^1.0.3"
   },
   "homepage": "",
   "keywords": [
