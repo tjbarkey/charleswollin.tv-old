@@ -4,7 +4,7 @@ import pic04 from '../images/pic04.jpg'
 
 const LivePage = () => (
 
-    <div id="newwrapper" className="wrapped">
+    <div>
       <span className="image main"><img src={pic04} alt="" /></span>
       <h2 className="major">See Him In Action!</h2>
       <p>
