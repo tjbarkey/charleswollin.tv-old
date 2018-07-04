@@ -4,7 +4,7 @@ import pic01 from '../images/pic01.jpg'
 
 const AboutPage = () => (
 
-    <div id="newwrapper" className="wrapped">
+    <div>
       <span className="image main"><img src={pic01} alt="" /></span>
       <h2 className="major">About Charles</h2>
       <p>Now in his 4th season as commentator with SF City, Wollin is a British-born Marin native and dual-citizen.

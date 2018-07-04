@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <div id="newwrapper" className="wrapped-blog">
+    <div>
     <h1 className="major">Latest Updates From Charles</h1>
     <div id="bloglisting" className="blog-posts">
       {posts

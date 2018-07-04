@@ -4,7 +4,7 @@ import pic03 from '../images/pic03.jpg'
 
 const ContactPage = () => (
 
-    <div id="newwrapper" className="wrapped">
+    <div>
     <span className="image main"><img src={pic03} alt="" /></span>
     <h2 className="major">Contact</h2>
     <form id="gform" method="POST" action="https://formspree.io/charleswollinfanmail@gmail.com">

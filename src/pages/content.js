@@ -4,7 +4,7 @@ import pic02 from '../images/pic02.jpg'
 
 const ContentPage = () => (
 
-    <div id="newwrapper" className="wrapped">
+    <div>
       <span className="image main"><img src={pic02} alt="" /></span>
       <h2 className="major">Content</h2>
       <p>Charles is an active sports writer and regularly covers soccer events, teams, and culture.  He has written for a number of publicatins, including [publication titles].

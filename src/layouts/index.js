@@ -99,6 +99,7 @@ class Template extends React.Component {
     if (location.pathname === rootPath) {
 
         content = (
+          <div>
           <div id="wrapper">
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
             <Main
@@ -109,6 +110,8 @@ class Template extends React.Component {
               onCloseArticle={this.handleCloseArticle}
             />
             <Footer timeout={this.state.timeout} />
+          </div>
+          <div id="bg"></div>
           </div>
         )
 
@@ -139,7 +142,7 @@ class Template extends React.Component {
 
         {content}
 
-        <div id="bg"></div>
+
       </div>
     )
   }
