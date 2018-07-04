@@ -2,6 +2,10 @@ backend:
   name: github
   repo: tjbarkey/charleswollin.tv # Path to Github repository
   branch: master # Branch to update
+  name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 
 publish_mode: editorial_workflow
