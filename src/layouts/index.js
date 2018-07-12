@@ -93,7 +93,7 @@ class Template extends React.Component {
     const { location, children } = this.props
 
     let rootPath = `/`
-    let worldPath = `/worldcup`
+
 
     let content;
 
@@ -117,7 +117,9 @@ class Template extends React.Component {
         )
 
     }
-    else if (this.props.location.pathname.toLowerCase() === worldPath) {
+
+
+    else  {
       content = (
         <div>
         <div id="wrapper">
@@ -134,23 +136,6 @@ class Template extends React.Component {
       )
     }
 
-    else {
-      content = (
-        <div id="newwrapper" className="inner">
-          <nav>
-          <ul>
-          <li>
-          <a href="../">RETURN TO HOMEPAGE</a>
-          </li>
-          </ul>
-          </nav>
-        <div id="newwrapper" className="page">
-            {children()}
-
-        </div>
-        </div>
-      )
-    }
 
     return (
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
