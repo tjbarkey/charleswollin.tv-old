@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Popup from 'react-popup'
 import "../assets/css/worldcup.css"
 
 
