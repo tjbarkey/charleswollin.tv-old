@@ -3,10 +3,10 @@ import '../assets/scss/main.scss'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-
 import Main from '../components/Main'
 import Footer from '../components/Footer'
-
+import WorldCupGraphic from '../components/WorldCupGraphic'
+import WorldCupInfo from '../components/WorldCupInfo'
 
 
 
@@ -93,6 +93,7 @@ class Template extends React.Component {
     const { location, children } = this.props
 
     let rootPath = `/`
+    let worldPath = `/worldcup`
 
     let content;
 
@@ -115,7 +116,25 @@ class Template extends React.Component {
           </div>
         )
 
-    } else {
+    }
+    else if (location.pathname.toLowerCase() === worldPath) {
+      content = (
+        <div>
+        <div id="wrapper">
+          <WorldCupGraphic onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+          <WorldCupInfo
+            isArticleVisible={this.state.isArticleVisible}
+            timeout={this.state.timeout}
+            articleTimeout={this.state.articleTimeout}
+            article={this.state.article}
+            onCloseArticle={this.handleCloseArticle}
+          />
+        </div>
+        </div>
+      )
+    }
+
+    else {
       content = (
         <div id="newwrapper" className="inner">
           <nav>
