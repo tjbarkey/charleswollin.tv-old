@@ -117,7 +117,7 @@ class Template extends React.Component {
         )
 
     }
-    else if (location.pathname.toLowerCase() === worldPath) {
+    else if (location.pathname === worldPath) {
       content = (
         <div>
         <div id="wrapper">

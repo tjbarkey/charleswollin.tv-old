@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import "../assets/css/worldcup.css"
 
 const WorldCupPage = () => (
-<div className="relative_container">
+<div>
 
 </div>
 
