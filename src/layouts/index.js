@@ -97,7 +97,24 @@ class Template extends React.Component {
 
     let content;
 
-    if (location.pathname === rootPath) {
+    if (location.pathname.toLowerCase() === worldPath) {
+      content = (
+        <div>
+        <div id="wrapper">
+          <WorldCupGraphic onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+          <WorldCupInfo
+            isArticleVisible={this.state.isArticleVisible}
+            timeout={this.state.timeout}
+            articleTimeout={this.state.articleTimeout}
+            article={this.state.article}
+            onCloseArticle={this.handleCloseArticle}
+          />
+        </div>
+        </div>
+      )
+    }
+
+    else if (location.pathname === rootPath) {
 
         content = (
           <div>
@@ -116,22 +133,6 @@ class Template extends React.Component {
           </div>
         )
 
-    }
-    else if (location.pathname.toLowerCase() === worldPath) {
-      content = (
-        <div>
-        <div id="wrapper">
-          <WorldCupGraphic onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
-          <WorldCupInfo
-            isArticleVisible={this.state.isArticleVisible}
-            timeout={this.state.timeout}
-            articleTimeout={this.state.articleTimeout}
-            article={this.state.article}
-            onCloseArticle={this.handleCloseArticle}
-          />
-        </div>
-        </div>
-      )
     }
 
     else {
