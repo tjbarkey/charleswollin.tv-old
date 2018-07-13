@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 @keyframes bounce {
   from { transform: translate3d(0, 0, 0);     }
   to   { transform: translate3d(0, -10px, 0); }
 }
 
-
+text {
+  font-family: Merriweather;
+}
 
 .pin:hover{
   animation: bounce 0.5s;

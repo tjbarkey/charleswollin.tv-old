@@ -5,6 +5,7 @@ import "../assets/css/worldcup.css"
 
 
 
+
 const WorldCupGraphic = (props) => (
 <div className="relative_container" style={props.timeout ? {display: 'none'} : {}}>
 
@@ -14,6 +15,7 @@ const WorldCupGraphic = (props) => (
 
         viewBox="0 0 2466.222 2024.975">
         <defs>
+
 
             <clippath id="clip-path"><rect id="Mask" className="cls-1" width="2466.222" height="2024.974"/></clippath>
             <clippath id="clip-path-2"><rect className="cls-1" x="1894.262" y="1650.393" width="74.505" height="79.896"/></clippath>
@@ -1075,7 +1077,7 @@ const WorldCupGraphic = (props) => (
                         <g className="cls-7">
                             <text className="cls-8" transform="translate(1905.18 1711.267) scale(0.979 1)">VS</text>
                         </g>
-                        <text className="cls-8" transform="translate(1697.415 1908.325) scale(0.979 1)">SUNDAY JULY 15 @ 8AM
+                        <text className="cls-8" transform="translate(1700.415 1908.325) scale(0.979 1)">SUNDAY JULY 15 @ 8AM
                         </text><rect className="cls-1" x="1607.718" y="1849.043" width="645.753" height="79.896"/><image
                             width="771"
                             height="545"
@@ -1087,7 +1089,7 @@ const WorldCupGraphic = (props) => (
                             xlinkHref={require('../images/Football Poster2.png')}/>
                         <text className="cls-9" transform="translate(1855.95 1489.079)">FINAL</text>
                         <a xlinkHref="javascript:;" onClick={() => {props.onOpenArticle('viewingparties')}} className="pin">
-                        <text className="cls-8" transform="translate(1550 1974.927) scale(0.979 1)">Click For List of Viewing Parties in SF!</text></a><rect className="cls-1" x="1607.718" y="1915.645" width="645.753" height="79.896"/></g>
+                        <text className="cls-8" transform="translate(1595 1974.927) scale(0.979 1)">Click For List of Viewing Parties in SF!</text></a><rect className="cls-1" x="1607.718" y="1915.645" width="645.753" height="79.896"/></g>
                     <g id="Third_Place" data-name="Third Place">
                         <text className="cls-9" transform="translate(1356.862 1298.433)">THIRD PLACE</text>
                         <g id="Text">
